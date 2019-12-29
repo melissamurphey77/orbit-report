@@ -8,5 +8,14 @@
       <th>Launch Date</th>
    </tr>
    <!-- TODO: put <tr *ngFor=""></tr> here -->
-   <tr *ngFor="let Satellite of satellites.sourceList">{{Satellite}}</tr>
+   <tr *ngFor="let sourceList of satellites">
+     <th>{{sourceList.name}}</th>
+     <th>{{sourceList.type}}</th>
+     <th>{{sourceList.operational}}</th>
+     <th>{{sourceList.orbitType}}</th>
+     <th>{{sourceList.launchDate}}</th>
+    </tr>
+
 </table>
+
+
